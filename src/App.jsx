@@ -24,7 +24,7 @@ const AdminContact = lazy(() => import('./pages/admin/AdminContact'));
 const AdminStack = lazy(() => import('./pages/admin/AdminStack'));
 const Links = lazy(() => import('./pages/admin/Links'));
 const AuthLayout = lazy(() => import('./pages/auth/authLayout'));
-const Register = lazy(() => import('./pages/auth/register'));
+// const Register = lazy(() => import('./pages/auth/register'));
 const Login = lazy(() => import('./pages/auth/login'));
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
             <AuthLayout />
           </CheckAuth>
         }>
-          <Route path="register" element={<Register />} />
+          {/* <Route path="register" element={<Register />} /> */}
           <Route path="login" element={<Login />} />
         </Route>
 

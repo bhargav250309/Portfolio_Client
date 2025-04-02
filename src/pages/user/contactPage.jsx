@@ -117,7 +117,7 @@ function ContactPage({links}) {
 
         </div>
 
-        <div className="col-md-12 footer">&copy; 2025 Bhargav Jotangiya - All rights reserved</div>
+        <div className="col-md-12 footer"><Link to="/admin">&copy; 2025 Bhargav Jotangiya - All rights reserved</Link></div>
       </div>
     </>
   );

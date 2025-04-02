@@ -1,5 +1,5 @@
 import React,{lazy,Suspense} from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom'; // Import Route and Routes here
+import { Route, Routes } from 'react-router-dom'; // Import Route and Routes here
 import UserPage from './pages/user/userPage';
 import NotFound from './components/notFound';
 
@@ -32,8 +32,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Navigate to="/main" />} />
-        <Route path="/main" element={<UserPage />} />
+        <Route path="/" element={<UserPage />} />
+        {/* <Route path="/main" element={<UserPage />} /> */}
 
         <Route path="/auth" element={
           <CheckAuth>

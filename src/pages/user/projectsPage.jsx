@@ -21,7 +21,7 @@ function ProjectsPage({ projects }) {
           projects?.map((project, index) => (
             <div className="project-card mb-5" key={index}>
               <div className="row h-100">
-                <div className="project-img col-md-5 border">
+                <div className="project-img col-md-5">
                   {/* Add project image here */}
                   <img src={project.projectImage} alt="" />
                 </div>

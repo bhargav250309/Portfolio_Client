@@ -1,5 +1,4 @@
 import React,{lazy,Suspense} from 'react';
-import './App.css';
 import { Navigate, Route, Routes } from 'react-router-dom'; // Import Route and Routes here
 import UserPage from './pages/user/userPage';
 import NotFound from './components/notFound';

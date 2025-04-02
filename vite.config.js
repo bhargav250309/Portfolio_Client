@@ -19,7 +19,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/app/',
+  base: '/',
   server: {
     proxy: {
       '/tinymce': 'https://cdn.tiny.cloud',

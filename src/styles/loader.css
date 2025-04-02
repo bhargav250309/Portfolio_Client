@@ -1,0 +1,32 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Initially takes up the full screen */
+  /* background-color: #1C1D20; Black background */
+  background-color: var(--loader);
+  color: var(--text-color);
+  /* color: rgb(247, 247, 247); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it stays on top of everything */
+}
+.loader::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background:  var(--loader); /* Blue to yellow gradient */
+  clip-path: ellipse(73% 75% at 50% 0%);
+}
+
+.loader h1 {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0;
+}

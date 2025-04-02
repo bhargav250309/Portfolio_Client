@@ -1,0 +1,135 @@
+.navbar-main {
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 99;
+}
+
+nav {
+    backdrop-filter: blur(20px);
+}
+
+.nav-logo {
+    height: 70px;
+    width: auto;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5vw;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.react-btn {
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    transition: .3s ease;
+    &:hover{
+        /* border: none; */
+        scale: 0.95;
+    }
+}
+
+button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px !important;
+}
+
+.respo-menu{
+    display: none;
+}
+
+.nav-sidebar-comp {
+    position: absolute;
+    top: 0;
+    right: -200%;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--responsive-nav-bg);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.respo-menu nav ul {
+    position: relative;
+    margin-top: 12rem;
+    z-index: 999;
+}
+
+.respo-menu nav ul li{
+    margin-bottom: 2vh !important;
+}
+
+.respo-menu nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    color: var(--responsive-nav-color) !important;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.respo-menu nav .nav-sidebar-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-sidebar-show{
+    right: 0;
+}
+
+.nav-sidebar-close{
+    color: var(--responsive-nav-color) !important;
+    font-size: 3rem;
+    float: right;
+    margin: 2vw 4vw;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+}
+
+.open-nav-sidebar{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+/* Add a class for the active tab */
+.active {
+   position: relative;
+}
+
+.active::after{
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 50px;
+}

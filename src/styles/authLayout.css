@@ -1,0 +1,50 @@
+/* AuthLayout.css */
+.auth-layout {
+    height: 100vh;
+  }
+  
+  .left-partition {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .auth-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .auth-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .right-partition {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7rem;
+  }
+  
+  .auth-btn{
+    border-radius: 10px !important;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #2366eb;
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+
+  

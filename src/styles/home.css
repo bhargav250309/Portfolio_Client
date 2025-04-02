@@ -1,0 +1,143 @@
+.home-header {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+    flex-direction: column;
+}
+
+.home-header .row{
+    position: relative;
+}
+
+.home-name{
+    margin-top: 9rem !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.designation {
+    border: 2px solid var(--text-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.text-name {
+    margin-top: 5vh;
+    font-size: 2.3rem;
+}
+
+.text-name span {
+    font-weight: 700;
+}
+
+.home-name button {
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-weight: 500;
+    letter-spacing: .5px;
+    padding: 10px 20px;
+    margin-top: 2rem;
+}
+
+.circle1,.circle2 {
+    position: absolute;
+    width: 10vh !important;
+    height: 0vh; 
+    border-radius: 50%;
+    border: 2;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.circle1{
+    background-color: rgba(255, 119, 0, 0.57);
+    top:15%;
+    left: -380px;
+    box-shadow: 500px 0px 400px 265px rgba(255, 119, 0, 0.57);
+}
+.circle2{
+    background-color: #68b8f98e;
+    bottom: 15%;
+    right:-380px;
+    box-shadow: -400px 136px 500px 265px  #68b8f991;
+}
+
+
+.home-img {
+    height: 450px;
+    width: 17vw;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.home-socials ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 3vh;
+    font-size: 1.5rem;
+}
+
+.home-socials ul li a {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.home-email {
+    text-align: right;
+}
+
+.home-email a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: .3s ease;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+.home-email a:hover {
+    text-decoration: underline;
+}
+
+.stack-logo-main {
+    /* background-color: var(--stack-color); */
+    background-color: var(--bg-color);
+    z-index: 1;
+}
+
+.part-heading {
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+  
+  .tech-card { 
+    width: 100% !important;
+    border-radius: 30px;
+    border: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px; /* Adds space between cards */
+    background-color: rgba(255, 255, 255, 0.049);
+    backdrop-filter: blur(20px);
+  }
+  
+  .tech-card img {
+    padding: 20px 10px;
+    height: 20vh; /* Adjust height of images as needed */
+    object-fit: contain;
+  }
+  

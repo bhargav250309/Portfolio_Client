@@ -1,0 +1,24 @@
+.links-align {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.links-align input {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .links-align {
+        display: block;
+    }
+
+    .links-align .col-md-2{
+        width: 100%;
+    }
+
+    .links-align input {
+        width: 100%;
+    }
+}

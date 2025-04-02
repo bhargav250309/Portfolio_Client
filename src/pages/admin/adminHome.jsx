@@ -94,7 +94,7 @@ function AdminHome() {
                 }}
                 initialValue={formData.shortDesc}
                 onEditorChange={handleEditorChange}
-              />
+              /> 
             </div>
 
             <button type="button" className="btn btn-primary" onClick={handleUpdate}>Update Value</button>

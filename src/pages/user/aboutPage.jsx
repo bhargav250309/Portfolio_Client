@@ -17,7 +17,7 @@ function AboutPage({ aboutInfo, links }) {
 
               <h1 className='mb-4 mt-1'>{aboutInfo?.userName}</h1>
 
-              <p className='mb-4'>{aboutInfo?.description}</p>
+              <p className='mb-4' dangerouslySetInnerHTML={{__html:aboutInfo?.description}} />
             </div>
 
             <div className="second-about-partition">

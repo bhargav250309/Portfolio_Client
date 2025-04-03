@@ -13,7 +13,7 @@ function AuthLayout() {
         {/* Left Partition with Background, Big Text, and Links */}
         <div className="left-partition col-md-6">
           <h1 className="auth-title">Hello Admin....</h1>
-          <p className="auth-description">To access the Portfolio, please register or login.</p>
+          <p className="auth-description">To access the Portfolio, please login.</p>
           <div className="auth-links">
           </div>
         </div>

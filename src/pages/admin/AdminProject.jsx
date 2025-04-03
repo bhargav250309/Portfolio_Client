@@ -211,7 +211,6 @@ function AdminProject() {
                 accept="image/*"
                 onChange={handleFileChange}
                 ref={fileInputRef} // Attach the ref to the file input
-                required
               />
             </div>
 

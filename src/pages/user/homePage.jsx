@@ -6,7 +6,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io5";
 import Slider from 'react-infinite-logo-slider'; // Import Infinite Logo Slider
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 function HomePage({ userInfo, stack, links }) {
 
@@ -27,9 +27,9 @@ function HomePage({ userInfo, stack, links }) {
                   <span>{userInfo?.userName}</span>
                 </p>
                 <p className='col-md-7 p-3' dangerouslySetInnerHTML={{__html:userInfo?.shortDesc}}/>
-                <Link to="reachout" style={{ textDecoration: 'none' }}>
+                <ScrollLink to="reachout" style={{ textDecoration: 'none' }}>
                   <button>Reach Out</button>
-                </Link>
+                </ScrollLink>
               </div>
               <div className="circle2"></div>
 

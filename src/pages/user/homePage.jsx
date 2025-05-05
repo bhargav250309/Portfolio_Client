@@ -5,8 +5,8 @@ import { IoLogoGithub } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io5";
 import Slider from 'react-infinite-logo-slider'; // Import Infinite Logo Slider
-// import { Link } from 'react-router-dom';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+// import { Link } from 'react-scroll';
 
 function HomePage({ userInfo, stack, links }) {
 
